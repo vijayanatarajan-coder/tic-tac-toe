@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="inputfield">
+    <input type="text" id="player-1" placeholder="Enter Player 1 Name (X)" />
+    <input type="text" id="player-2" placeholder="Enter Player 2 Name (O)" />
+  </div>
+  <div>
+    <button id="startGameBtn">Start Game</button>
+  </div>
+  <div id="tic-tac-toe-board">
+    <div class="row">
+      <div class="cell" id="box-0" onclick="handleClick(0);"></div>
+      <div class="cell" id="box-3" onclick="handleClick(3);"></div>
+      <div class="cell" id="box-6" onclick="handleClick(6);"></div>
+    </div>
+    <div class="row">
+      <div class="cell" id="box-1" onclick="handleClick(1);"></div>
+      <div class="cell" id="box-4" onclick="handleClick(4);"></div>
+      <div class="cell" id="box-7" onclick="handleClick(7);"></div>
+    </div>
+    <div class="row">
+      <div class="cell" id="box-2" onclick="handleClick(2);"></div>
+      <div class="cell" id="box-5" onclick="handleClick(5);"></div>
+      <div class="cell" id="box-8" onclick="handleClick(8);"></div>
+    </div>
+  </div>
+  <div id="resultMessage" class="resultMessage"></div>
+  <button id="resetGameBtn" onclick="resetGame()">Reset Game</button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

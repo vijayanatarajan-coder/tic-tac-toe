@@ -1,0 +1,153 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #74ebd5, #ACB6E5);
+    color: #333;
+  }
+  
+  #tic-tac-toe-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+  
+  }
+  
+  .cell {
+    background-color: #fff;
+    border: 1px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .cell:nth-child(3n) {
+    border-right: none;
+    /* Remove right border for the last column */
+  }
+  
+  .cell:nth-last-child(-n+3) {
+    border-bottom: none;
+    /* Remove bottom border for the last row */
+  }
+  
+  .cell:nth-child(2n) {
+    border-right: none;
+    /* Remove right border for the last column */
+  }
+  
+  .cell:nth-child(1n) {
+    border-right: none;
+    /* Remove right border for the last column */
+  }
+  
+  .cell:nth-last-child(n+3) {
+    border-top: none;
+    /* Remove bottom border for the last row */
+  }
+  
+  #box-0 {
+    border-left: none;
+  }
+  
+  #box-3 {
+    border-left: none;
+  }
+  
+  #box-6 {
+    border-left: none;
+  }
+  
+  .cell:hover {
+    background-color: #ACB6E5;
+  }
+  
+  .game-message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  #resetGameBtn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #74ebd5;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .resultMessage {
+    margin: 10px;
+    padding: 15px;
+    font-size: 18px;
+    color: black;
+  
+  }
+  
+  #resetButton:hover {
+    background-color: #ACB6E5;
+  }
+  
+  .inputfield input {
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ACB6E5;
+    background-color: #fff;
+    color: #000;
+  
+  }
+  
+  #startGameBtn {
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background-color: #ACB6E5;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  
+  #resetGameBtn {
+    margin: 0px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background-color: #ACB6E5;
+  }
+  
+  
+  @media screen and (min-device-width: 200px) and (max-device-width: 300px) { 
+    #tic-tac-toe-board {
+      display: grid;
+      grid-template-columns: repeat(3, 50px);
+      grid-template-rows: repeat(3, 50px);
+      width: 100px;
+      height: 100px;
+    }
+    body{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: linear-gradient(to right, #74ebd5, #ACB6E5);
+      color: #333;
+    };
+  }
